@@ -1,0 +1,20 @@
+---
+import { Button } from "../ui/button";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
+---
+
+<footer class="bg-gray-200 p-4 h-auto flex flex-col md:flex-row justify-around items-center">
+    <h1 class="font-bold">Almondd</h1>
+    <div class="hidden md:block">
+        <Button variant="ghost">Home</Button>
+        <Button variant="ghost">About Us</Button>
+        <Button variant="ghost">Contact Us</Button>
+    </div>
+
+    <div class="space-x-2">
+        <Button variant="ghost" className="rounded-full w-8 h-8 md:w-10 md:h-10 p-2" ><Facebook fill="black" strokeWidth={1.5} /></Button>
+        <Button variant="ghost" className="rounded-full w-8 h-8 md:w-10 md:h-10 p-2"><Instagram  strokeWidth={1.5} /></Button>
+        <Button variant="ghost" className="rounded-full w-8 h-8 md:w-10 md:h-10 p-2"><Linkedin fill="black" strokeWidth={1.5} /></Button>
+    </div>
+
+</footer>
